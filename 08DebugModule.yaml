@@ -1,10 +1,10 @@
 ---
 - hosts: all
-  become: true
   vars:
    name: Rakesh Software Technologies
    Technology: DevOps 
   tasks:
-   - name: Debug Module
-     var: "The company name is:{{name}}"
+  - name: Debug Module
+    debug:
+     msg: "the value of name is:{{name}}"
 ...
