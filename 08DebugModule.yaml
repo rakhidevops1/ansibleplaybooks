@@ -6,5 +6,6 @@
   tasks:
   - name: Debug Module
     debug:
-     msg: "the value of name is:{{name}}"
+     var: name
+     var: Technology
 ...
